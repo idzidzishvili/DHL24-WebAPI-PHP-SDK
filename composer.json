@@ -1,0 +1,17 @@
+{
+    "name": "alexcherniatin/dhl24-webapi-php-sdk",
+    "description": "DHL24 WebAPI PHP SDK",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Cherniatin Oleksandr",
+            "email": "alexchernyatin@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Alexcherniatin\\DHL\\": "src"
+        }
+    }
+}
