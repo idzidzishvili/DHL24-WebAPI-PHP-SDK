@@ -37,6 +37,10 @@ class DHL24
     {
         $this->client = new Client($sandbox);
 
+        if(!$this->client){
+            throw new SoapException("Connection error");
+        }
+
         $this->authData = (new AuthData($login, $password))->structure();
 
         $this->accountNumber = $accountNumber;

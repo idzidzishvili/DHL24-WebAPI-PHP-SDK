@@ -118,4 +118,16 @@ class Utils
 
         return $fileName . '.' . $extention;
     }
+
+    /**
+     * Remove all symbols except numbers from string 
+     *
+     * @param string $text
+     *
+     * @return string 
+    */
+    public static function onlyNumbers(string $text): string
+    {
+        return \trim(\preg_replace('/[^0-9]/', '', $text));
+    }
 }

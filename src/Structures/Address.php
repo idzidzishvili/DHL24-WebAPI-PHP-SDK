@@ -3,6 +3,7 @@
 namespace Alexcherniatin\DHL\Structures;
 
 use Alexcherniatin\DHL\Exceptions\InvalidStructureException;
+use Alexcherniatin\DHL\Utils;
 
 class Address
 {
@@ -87,7 +88,7 @@ class Address
 
     public function setPostalCode(string $postalCode): Address
     {
-        $this->postalCode = $postalCode;
+        $this->postalCode = Utils::onlyNumbers($postalCode);
 
         return $this;
     }
@@ -130,7 +131,7 @@ class Address
 
     public function setContactPhone(string $contactPhone): Address
     {
-        $this->contactPhone = $contactPhone;
+        $this->contactPhone = Utils::onlyNumbers($contactPhone);
 
         return $this;
     }
