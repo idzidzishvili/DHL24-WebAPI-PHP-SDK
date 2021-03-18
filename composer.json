@@ -2,6 +2,7 @@
     "name": "alexcherniatin/dhl24-webapi-php-sdk",
     "description": "DHL24 WebAPI PHP SDK",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Cherniatin Oleksandr",
