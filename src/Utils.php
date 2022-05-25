@@ -116,7 +116,8 @@ class Utils
                 break;
         }
 
-        return $fileName . '.' . $extention;
+        return 'label' . '.' . $extention;
+        //return $fileName . '.' . $extention;
     }
 
     /**
