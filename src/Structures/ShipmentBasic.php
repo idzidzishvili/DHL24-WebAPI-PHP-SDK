@@ -13,7 +13,7 @@ class ShipmentBasic
      * 
      * @var int 
     */
-    private $shipmentId = 0;
+    private $shipmentId = '';
 
     /**
      * Date of shipment creation, in the format YYYY-MM-DD
@@ -55,7 +55,7 @@ class ShipmentBasic
     */
     private $orderStatus = '';
 
-    public function setShipmentId(int $shipmentId): ShipmentBasic
+    public function setShipmentId(string $shipmentId): ShipmentBasic
     {
         $this->shipmentId = $shipmentId;
 
